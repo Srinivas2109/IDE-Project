@@ -1,0 +1,10 @@
+This is a test file to verify that the file opening functionality works correctly.
+
+You should be able to:
+1. Click on this file in the sidebar
+2. See it open in a new tab
+3. Edit the content
+4. See the modified indicator
+5. Save the changes
+
+If all of these work, then the file opening system is functioning properly!

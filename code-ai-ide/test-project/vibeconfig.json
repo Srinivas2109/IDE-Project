@@ -1,0 +1,51 @@
+{
+  "name": "test-project",
+  "version": "0.1.0",
+  "description": "A test project for Code AI IDE",
+  "languages": ["typescript", "python"],
+  "build": {
+    "typescript": "npm run build",
+    "python": "python -m py_compile main.py"
+  },
+  "run": {
+    "typescript": "npm start",
+    "python": "python main.py"
+  },
+  "test": {
+    "typescript": "npm test",
+    "python": "python -m pytest"
+  },
+  "lint": {
+    "typescript": "npm run lint",
+    "python": "flake8 ."
+  },
+  "format": {
+    "typescript": "npm run format",
+    "python": "black ."
+  },
+  "ai": {
+    "model": "codellama:7b",
+    "provider": "ollama",
+    "endpoint": "http://localhost:11434",
+    "features": ["completion", "explanation", "refactoring"]
+  },
+  "lsp": {
+    "typescript": {
+      "server": "typescript-language-server",
+      "args": ["--stdio"],
+      "fileTypes": ["typescript", "javascript", "tsx", "jsx"]
+    },
+    "python": {
+      "server": "pylsp",
+      "args": ["--stdio"],
+      "fileTypes": ["python"]
+    }
+  },
+  "docker": {
+    "enabled": false,
+    "images": {
+      "python": "python:3.11-slim",
+      "typescript": "node:18-slim"
+    }
+  }
+}

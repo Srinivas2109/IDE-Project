@@ -1,0 +1,72 @@
+{
+  "name": "code-ai-ide",
+  "version": "0.1.0",
+  "description": "AI-powered IDE project configuration",
+  "languages": ["typescript", "python", "rust", "csharp"],
+  "build": {
+    "typescript": "npm run build",
+    "python": "python -m py_compile main.py",
+    "rust": "cargo build",
+    "csharp": "dotnet build"
+  },
+  "run": {
+    "typescript": "npm start",
+    "python": "python main.py",
+    "rust": "cargo run",
+    "csharp": "dotnet run"
+  },
+  "test": {
+    "typescript": "npm test",
+    "python": "python -m pytest",
+    "rust": "cargo test",
+    "csharp": "dotnet test"
+  },
+  "lint": {
+    "typescript": "npm run lint",
+    "python": "flake8 .",
+    "rust": "cargo clippy",
+    "csharp": "dotnet format --verify-no-changes"
+  },
+  "format": {
+    "typescript": "npm run format",
+    "python": "black .",
+    "rust": "cargo fmt",
+    "csharp": "dotnet format"
+  },
+  "ai": {
+    "model": "codellama:7b",
+    "provider": "ollama",
+    "endpoint": "http://localhost:11434",
+    "features": ["completion", "explanation", "refactoring", "debugging"]
+  },
+  "lsp": {
+    "typescript": {
+      "server": "typescript-language-server",
+      "args": ["--stdio"],
+      "fileTypes": ["typescript", "javascript", "tsx", "jsx"]
+    },
+    "python": {
+      "server": "pylsp",
+      "args": ["--stdio"],
+      "fileTypes": ["python"]
+    },
+    "rust": {
+      "server": "rust-analyzer",
+      "args": ["--stdio"],
+      "fileTypes": ["rust"]
+    },
+    "csharp": {
+      "server": "omnisharp",
+      "args": ["--stdio"],
+      "fileTypes": ["csharp", "cs"]
+    }
+  },
+  "docker": {
+    "enabled": true,
+    "images": {
+      "python": "python:3.11-slim",
+      "rust": "rust:1.70-slim",
+      "csharp": "mcr.microsoft.com/dotnet/sdk:7.0"
+    }
+  }
+}

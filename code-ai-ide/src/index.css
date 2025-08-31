@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-ide-border;
+  }
+  
+  body {
+    @apply bg-ide-bg text-ide-text font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .ide-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.ide-border') transparent;
+  }
+  
+  .ide-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .ide-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .ide-scrollbar::-webkit-scrollbar-thumb {
+    background-color: theme('colors.ide-border');
+    border-radius: 4px;
+  }
+  
+  .ide-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: theme('colors.ide-text-secondary');
+  }
+  
+  .monaco-editor {
+    @apply font-mono;
+  }
+  
+  .monaco-editor .margin {
+    @apply bg-ide-sidebar;
+  }
+  
+  .monaco-editor .monaco-editor-background {
+    @apply bg-ide-bg;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
