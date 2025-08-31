@@ -1,4 +1,4 @@
-# Code AI IDE 🚀
+# Code AI IDE
 
 A lightweight, offline-first, AI-powered IDE capable of supporting all major programming languages through LSP integration, task runners, and AI assistance.
 
@@ -20,7 +20,7 @@ A lightweight, offline-first, AI-powered IDE capable of supporting all major pro
 - **Cloud Integration** - Optional cloud-based compilation and testing
 - **Collaboration** - Real-time collaborative editing
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Backend**: Tauri (Rust) - Lightweight desktop framework
 - **Frontend**: React + TypeScript + TailwindCSS
@@ -29,7 +29,7 @@ A lightweight, offline-first, AI-powered IDE capable of supporting all major pro
 - **Build Tools**: Docker + local toolchains
 - **Package Manager**: npm
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -69,7 +69,7 @@ A lightweight, offline-first, AI-powered IDE capable of supporting all major pro
    npm run tauri:build
    ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 code-ai-ide/
@@ -123,7 +123,7 @@ code-ai-ide/
 - [ ] Collaboration features
 - [ ] Performance optimizations
 
-## 🔧 Configuration
+## Configuration
 
 ### vibeconfig.json
 Create a `vibeconfig.json` file in your project root for custom build and test commands:
@@ -147,7 +147,7 @@ Create a `vibeconfig.json` file in your project root for custom build and test c
 }
 ```
 
-## 🎨 Customization
+## Customization
 
 ### Themes
 The IDE supports custom themes through CSS variables. Modify `src/index.css` to create your own theme:
@@ -164,7 +164,7 @@ The IDE supports custom themes through CSS variables. Modify `src/index.css` to 
 ### Keybindings
 Customize keybindings in the Monaco Editor configuration within `src/components/MonacoEditor.tsx`.
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
@@ -175,22 +175,12 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Tauri](https://tauri.app/) - Desktop framework
 - [Monaco Editor](https://microsoft.github.io/monaco-editor/) - Code editor
 - [Ollama](https://ollama.ai/) - Local AI model runner
 - [VS Code](https://code.visualstudio.com/) - Inspiration for UI/UX
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/your-repo/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-repo/discussions)
-- **Documentation**: [Wiki](https://github.com/your-repo/wiki)
 
 ## 🌟 Star History
 
